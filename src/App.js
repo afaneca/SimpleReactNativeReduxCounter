@@ -10,6 +10,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'; // Provider - high order component
 import ReduxPromise from 'redux-promise';
 import reducers from './reducers';
+import Router from "./Router";
 
 // cria o application state
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
@@ -18,9 +19,7 @@ const store = createStoreWithMiddleware(reducers);
 const App = () => {
   return (
     <Provider store = {store} >
-      <View style={styles.container}>
-        <Counter />
-      </View>
+        <Router />
     </Provider>
     
   );

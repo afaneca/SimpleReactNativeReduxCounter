@@ -7,7 +7,16 @@ import CountDisplay from '../components/CountDisplay';
 
 // functional component
 const Counter = () => {
-    return <View><CountDisplay /></View>
+    return <View style={styles.container}><CountDisplay /></View>
 }
+
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: "space-evenly",
+        alignItems: "center"
+    }
+});
 
 export default Counter;
