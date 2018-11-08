@@ -1,0 +1,3 @@
+export const CURRENT_VALUE = 'FETCH_VALUE';
+export const INCREMENT = 'INCREMENT_VALUE';
+export const DECREMENT = 'DECREMENT_VALUE';
